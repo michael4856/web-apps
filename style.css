@@ -1,0 +1,82 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    font-family: sans-serif;
+}
+header{
+    
+    padding: 2rem 1rem;
+}
+
+#new-task-from{
+    display: flex;
+}
+input, button{
+    color: blueviolet;
+    background-color: aqua;
+    border: 0px;
+}
+.edit{
+    background-color: brown;
+    color: yellowgreen;
+}
+.delete{
+    background-color: chocolate;
+    color: red;
+    
+}
+.edit:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.delete:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+#new-task-input{
+    flex:1 1 0%;
+    background-color: blueviolet;
+    padding: 2rem;
+    border-radius: 2rem;
+    margin-right: 1rem;
+    color: aqua;
+    font-size: 1.3rem;
+}
+#new-task-input::placeholder{
+    color: gray;
+    background-color: brown;
+}
+#new-task-submit{
+    background-color: chocolate;
+    color: brown;
+    font-size: 1.3rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right,chocolate,
+    pink);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+#new-task-submit:hover{
+    opacity: 0.8;
+}
+#new-task-submit:active{
+    opacity: 0.6;
+}
+main{
+    flex: 1 1 0%;
+    padding: 2rem, 1rem;
+}
+.task-list{
+    padding:1rem;
+}
+
+#tasks .task{
+    display: flex;
+    justify-content: space-between;
+    background-color: darkslateblue;
+    padding: 2rem ;     
+    color: aliceblue;            
+}
